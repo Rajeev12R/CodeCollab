@@ -104,39 +104,6 @@ const Features = () => {
         </div>
       </div>
 
-      <style jsx>{`
-        @keyframes border-beam {
-          0% {
-            transform: translateX(-100%) translateY(-100%) rotate(45deg);
-          }
-          100% {
-            transform: translateX(100%) translateY(100%) rotate(45deg);
-          }
-        }
-        
-        .animate-border-beam {
-          animation: border-beam 3s linear infinite;
-        }
-        
-        .group:nth-child(1) .animate-border-beam {
-          animation-delay: 0s;
-        }
-        .group:nth-child(2) .animate-border-beam {
-          animation-delay: 0.5s;
-        }
-        .group:nth-child(3) .animate-border-beam {
-          animation-delay: 1s;
-        }
-        .group:nth-child(4) .animate-border-beam {
-          animation-delay: 1.5s;
-        }
-        .group:nth-child(5) .animate-border-beam {
-          animation-delay: 2s;
-        }
-        .group:nth-child(6) .animate-border-beam {
-          animation-delay: 2.5s;
-        }
-      `}</style>
     </section>
   )
 }
