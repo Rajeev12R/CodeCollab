@@ -166,6 +166,7 @@ const Hero = () => {
             <div className="text-2xl font-bold">OpenAI</div>
           </div>
         </div>
+      </div>
     </section>
   )
 }
