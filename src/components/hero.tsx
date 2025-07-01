@@ -84,7 +84,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-4">
+    <section className="relative h-[80vh] w-full overflow-hidden flex items-center justify-center text-center px-4">
       {/* Canvas for stars */}
       <canvas
         ref={canvasRef}
@@ -93,7 +93,7 @@ const Hero = () => {
       />
       
       {/* Content */}
-      <div className="relative -top-20 z-10 text-white max-w-4xl mx-auto">
+      <div className="relative -top-10 z-10 text-white max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Welcome to CodeCollab
         </h1>
