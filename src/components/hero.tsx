@@ -87,7 +87,7 @@ const Hero = () => {
 
 
   return (
-    <section className="relative h-[80vh] w-full overflow-hidden flex items-center justify-center text-center px-4">
+    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-4">
       {/* Canvas for stars */}
       <canvas
         ref={canvasRef}
