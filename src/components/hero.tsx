@@ -22,7 +22,7 @@ const Hero = () => {
     resizeCanvas()
     window.addEventListener('resize', resizeCanvas)
 
-    // Star class
+    // Star class in Typescript
     class Star {
       x: number
       y: number
@@ -81,8 +81,10 @@ const Hero = () => {
 
     return () => {
       window.removeEventListener('resize', resizeCanvas)
+
     }
   }, [])
+
 
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-4">
