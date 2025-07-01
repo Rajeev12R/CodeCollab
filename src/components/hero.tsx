@@ -1,5 +1,6 @@
 'use client'
 import React, { useEffect, useRef } from 'react'
+import { Button } from './ui/button'
 
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
@@ -97,9 +98,10 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Welcome to CodeCollab
         </h1>
-        <p className="text-xl md:text-3xl leading-relaxed">
+        <p className="text-xl md:text-2xl leading-relaxed">
           A collaborative platform built like a product, not just a project.
         </p>
+        <Button className='mt-4 text-md px-8 py-3'>Let's Get Started</Button>
       </div>
     </section>
   )
