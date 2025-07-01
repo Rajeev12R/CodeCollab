@@ -150,7 +150,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             className="border-white/20 text-background bg-foreground hover:bg-background text-lg px-8 py-4 rounded-full font-semibold transition-all duration-300"
-          >
+          > 
             Watch Demo 
           </Button>
         </div>
