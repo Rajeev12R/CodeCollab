@@ -120,3 +120,35 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes beam {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-beam {
+  animation: beam 3s ease-in-out infinite;
+}
+
+.stars {
+  width: 100%;
+  height: 100%;
+  background: black;
+  background-image: radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px, 100px 100px;
+  animation: starsMove 60s linear infinite;
+}
+
+@keyframes starsMove {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 10000px 5000px, 5000px 10000px;
+  }
+}
