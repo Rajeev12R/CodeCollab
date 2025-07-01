@@ -87,14 +87,13 @@ const Hero = () => {
 
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-4">
+    <section className="relative h-[80vh] w-full overflow-hidden flex items-center justify-center text-center px-4">
       {/* Canvas for stars */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 z-0"
         style={{ background: 'black' }}
       />
-      
       <div className="relative z-10 text-white max-w-6xl mx-auto space-y-8">
         {/* Main heading with enhanced styling */}
         <div className="space-y-4">
@@ -167,7 +166,6 @@ const Hero = () => {
             <div className="text-2xl font-bold">OpenAI</div>
           </div>
         </div>
-      </div>
     </section>
   )
 }
