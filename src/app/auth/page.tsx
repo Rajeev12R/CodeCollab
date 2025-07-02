@@ -1,8 +1,17 @@
 "use client"
 import React, { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
+import { signIn } from 'next-auth/react'
 import { Github, Sparkles, Code, Zap, Star } from "lucide-react"
+import { sign } from "crypto"
 
 const AuthPage = () => {
+    const router = useRouter();
+    const handleGitHubSignIn = () => {
+        signIn("github", {
+            callbackUrl: "/dashboard"
+        })
+    }
   const [currentTime, setCurrentTime] = useState(new Date())
   const [greeting, setGreeting] = useState("")
   const [isHovered, setIsHovered] = useState(false)
@@ -108,6 +117,7 @@ const AuthPage = () => {
               <button
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
+                onClick={handleGitHubSignIn}
                 className="w-full relative group overflow-hidden bg-gradient-to-r from-zinc-800 to-stone-800 hover:from-zinc-700 hover:to-stone-700 text-white font-semibold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border border-zinc-600 hover:border-zinc-500"
               >
                 <div className="flex items-center justify-center space-x-3">
